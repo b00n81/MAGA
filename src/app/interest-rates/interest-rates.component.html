@@ -1,0 +1,14 @@
+{{ interestRatesList|json }}​
+<div *ngFor="let rate of interestRatesList">​
+
+	<h4>{{ rate.Hypotheek }}</h4>​
+
+	<ul>​
+		<li>id- {{rate.id}}</li>
+		<li>NHG - {{ rate.NHG }}</li>​
+		<li>60% LTV - {{ rate['60%'] }}</li>​
+		<li>80% LTV - {{ rate['80%'] }}</li>​
+		<li>100% LTV - {{ rate['100%'] }}</li>​
+	</ul>​
+
+</div>​
